@@ -1,5 +1,9 @@
 import Vue from 'vue'
 import App from './App'
+import store from '@/store/'
+
+//  初始化全局状态
+Vue.prototype.$store = store
 
 Vue.config.productionTip = false
 App.mpType = 'app'

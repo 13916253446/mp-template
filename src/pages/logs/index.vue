@@ -5,18 +5,22 @@
         <card :text="(index + 1) + ' . ' + log"></card>
       </li>
     </ul>
+    <div>{{name}}</div>
   </div>
 </template>
 
 <script>
 import { formatTime } from '@/utils/index'
 import card from '@/components/card'
+import { mapState } from 'vuex'
 
 export default {
   components: {
     card
   },
-
+  computed: mapState({
+    name: state => state.name
+  }),
   data () {
     return {
       logs: []

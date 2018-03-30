@@ -66,7 +66,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="stylus" scoped>
 .userinfo {
   display: flex;
   flex-direction: column;
